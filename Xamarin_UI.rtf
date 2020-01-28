@@ -1,0 +1,245 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang2057{\fonttbl{\f0\fnil Consolas;}{\f1\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red163\green21\blue21;\red255\green0\blue0;\red0\green128\blue0;}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\cf1\f0\fs19\lang9 <?xml version="1.0" encoding="utf-8" ?>\cf2\par
+\cf1 <\cf3 ContentPage\cf4  xmlns\cf1 ="http://xamarin.com/schemas/2014/forms"\cf2\par
+            \cf4  xmlns\cf1 :\cf4 x\cf1 ="http://schemas.microsoft.com/winfx/2009/xaml"\cf2\par
+            \cf4  xmlns\cf1 :\cf4 d\cf1 ="http://xamarin.com/schemas/2014/forms/design"\cf2\par
+            \cf4  xmlns\cf1 :\cf4 mc\cf1 ="http://schemas.openxmlformats.org/markup-compatibility/2006"\cf2\par
+            \cf4  mc\cf1 :\cf4 Ignorable\cf1 ="d"\cf2\par
+            \cf4  x\cf1 :\cf4 Class\cf1 ="App6.MainPage">\cf2\par
+    \par
+    \par
+\par
+    \cf1 <\cf3 Grid\cf4  RowSpacing\cf1 ="0"\cf4  ColumnSpacing\cf1 ="5" >\cf2\par
+\par
+        \cf1 <\cf3 Grid.RowDefinitions\cf1 >\cf2\par
+            \par
+            \cf1 <\cf3 RowDefinition\cf4  Height\cf1 ="*" />\cf2\par
+            \cf1 <\cf3 RowDefinition\cf4  Height\cf1 ="40" />\cf2\par
+\par
+        \cf1 </\cf3 Grid.RowDefinitions\cf1 >\cf2\par
+\par
+        \par
+\par
+        \cf1 <\cf3 Grid\cf4  Grid.Row\cf1 ="0"\cf4  BackgroundColor\cf1 ="NavajoWhite"/>\cf2\par
+\par
+\par
+\par
+\par
+\par
+\par
+        \cf1 <\cf3 Grid\cf4  Grid.Row\cf1 ="1"\cf2  \par
+                 \cf4  VerticalOptions\cf1 ="EndAndExpand"\cf2\par
+                 \cf4  BackgroundColor\cf1 ="#333738"\cf2  \cf4  RowSpacing\cf1 ="0.1"\cf4  ColumnSpacing\cf1 ="0.1" >\cf2\par
+\par
+\par
+            \cf1 <\cf3 Grid.ColumnDefinitions\cf1 >\cf2\par
+                \cf1 <\cf3 ColumnDefinition\cf4  Width\cf1 ="80"/>\cf2\par
+                \cf1 <\cf3 ColumnDefinition\cf4  Width\cf1 ="100"/>\cf2\par
+                \cf1 <\cf3 ColumnDefinition\cf4  Width\cf1 ="150"/>\cf2\par
+                \cf1 <\cf3 ColumnDefinition\cf4  Width\cf1 ="150"/>\cf2\par
+                \cf1 <\cf3 ColumnDefinition\cf4  Width\cf1 ="100"/>\cf2\par
+                \cf1 <\cf3 ColumnDefinition\cf4  Width\cf1 ="200"/>\cf2\par
+                \cf1 <\cf3 ColumnDefinition\cf4  Width\cf1 ="150"/>\cf2\par
+                \cf1 <\cf3 ColumnDefinition\cf4  Width\cf1 ="150"/>\cf2\par
+                \cf1 <\cf3 ColumnDefinition\cf4  Width\cf1 ="80"/>\cf2\par
+                \cf1 <\cf3 ColumnDefinition\cf4  Width\cf1 ="30"/>\cf2\par
+                \cf1 <\cf3 ColumnDefinition\cf4  Width\cf1 ="50"/>\cf2\par
+                \cf1 <\cf3 ColumnDefinition\cf4  Width\cf1 ="110"/>\cf2\par
+                \par
+            \cf1 </\cf3 Grid.ColumnDefinitions\cf1 >\cf2\par
+                \par
+            \par
+            \par
+                        \cf5 <!--First Button Stop-->\cf2             \par
+\par
+                \cf1 <\cf3 Button\cf4  Grid.Column\cf1 ="0"\cf2  \cf4  x\cf1 :\cf4 Name\cf1 ="StopButtonIcon"\cf2  \cf4  BackgroundColor\cf1 ="#333738"\cf4  Text\cf1 ="Stop"\cf4  TextColor\cf1 ="White"\cf2\par
+                           \cf4  BorderColor\cf1 ="White"\cf4  HorizontalOptions\cf1 ="Start"\cf4  VerticalOptions\cf1 ="Start"\cf2\par
+                   \cf4  Margin\cf1 ="6"\cf4  Padding\cf1 ="0.5">\cf2\par
+\par
+\par
+\par
+                    \cf1 <\cf3 Button.Image\cf2  \par
+                        \cf4  Aspect\cf1 ="AspectFit">\cf2\par
+                        \cf1 <\cf3 OnPlatform\cf4  x\cf1 :\cf4 TypeArguments\cf1 ="FileImageSource"\cf2\par
+                                \cf4  iOS\cf1 ="Stop.png"\cf2\par
+                                 \cf4  Android\cf1 ="Stop.png"\cf2\par
+                                 \cf4  WinPhone\cf1 ="Assets/Icon/Stop.png" />\cf2\par
+                    \cf1 </\cf3 Button.Image\cf1 >\cf2\par
+                \cf1 </\cf3 Button\cf1 >\cf2\par
+\par
+\par
+                    \par
+            \par
+            \cf5 <!--Second Button Play-->\cf2\par
+         \par
+            \cf1 <\cf3 Button\cf4  x\cf1 :\cf4 Name\cf1 ="PlayButton"\cf2  \cf4  Grid.Column\cf1 ="1"\cf2\par
+                   \cf4  Text\cf1 ="Play"\cf4  BackgroundColor\cf1 ="#333738"\cf4  TextColor\cf1 ="White"\cf4  BorderColor\cf1 ="White"\cf4  Margin\cf1 ="6"\cf4  Padding\cf1 ="0.5"\cf2\par
+                       \cf4  HorizontalOptions\cf1 ="Start"\cf4  VerticalOptions\cf1 ="Start">\cf2\par
+\par
+                \cf1 <\cf3 Button.Image\cf2  \par
+                        \cf4  Aspect\cf1 ="AspectFit">\cf2\par
+                    \cf1 <\cf3 OnPlatform\cf4  x\cf1 :\cf4 TypeArguments\cf1 ="FileImageSource"\cf2\par
+                                \cf4  iOS\cf1 ="Play.png"\cf2\par
+                                 \cf4  Android\cf1 ="Play.png"\cf2\par
+                                 \cf4  WinPhone\cf1 ="Assets/Icon/Play.png" />\cf2\par
+                \cf1 </\cf3 Button.Image\cf1 >\cf2\par
+\par
+            \cf1 </\cf3 Button\cf1 >\cf2\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+                      \cf5 <!--Third Button 10 Second Back-->\cf2\par
+\par
+\par
+\par
+            \cf1 <\cf3 Button\cf4  Grid.Column\cf1 ="2"\cf4  x\cf1 :\cf4 Name\cf1 ="BackwardButton"\cf2\par
+               \cf4  Text\cf1 ="10 Sec Back"\cf4  BackgroundColor\cf1 ="#333738"\cf4  TextColor\cf1 ="White"\cf4  BorderColor\cf1 ="White"\cf4  Margin\cf1 ="6"\cf4  Padding\cf1 ="0.5"\cf2  \par
+                   \cf4  HorizontalOptions\cf1 ="Start"\cf4  VerticalOptions\cf1 ="Start">\cf2\par
+\par
+                \cf1 <\cf3 Button.Image\cf2  \par
+                        \cf4  Aspect\cf1 ="AspectFit">\cf2\par
+                    \cf1 <\cf3 OnPlatform\cf4  x\cf1 :\cf4 TypeArguments\cf1 ="FileImageSource"\cf2\par
+                                \cf4  iOS\cf1 ="Backward.png"\cf2\par
+                                 \cf4  Android\cf1 ="Backward.png"\cf2\par
+                                 \cf4  WinPhone\cf1 ="Assets/Icon/Backward.png"\cf2  \cf1  />\cf2\par
+                \cf1 </\cf3 Button.Image\cf1 >\cf2\par
+\par
+\par
+\par
+            \cf1 </\cf3 Button\cf1 >\cf2\par
+            \par
+            \par
+            \par
+            \cf5 <!--Fourth Button 10 Second Forward-->\cf2\par
+\par
+\par
+            \cf1 <\cf3 Button\cf4  Grid.Column\cf1 ="3"\cf4  x\cf1 :\cf4 Name\cf1 ="ForwardButton"\cf2\par
+                     \cf4  Text\cf1 ="10 sec Next"\cf4  BackgroundColor\cf1 ="#333738"\cf4  TextColor\cf1 ="White"\cf4  BorderColor\cf1 ="White"\cf2  \par
+                   \cf4  VerticalOptions\cf1 ="Start"\cf4  HorizontalOptions\cf1 ="Start"\cf2  \par
+                   \cf4  Margin\cf1 ="6"\cf4  Padding\cf1 ="0.5" >\cf2\par
+\par
+                \cf1 <\cf3 Button.Image\cf2  \par
+                        \cf4  Aspect\cf1 ="AspectFit">\cf2\par
+                    \cf1 <\cf3 OnPlatform\cf4  x\cf1 :\cf4 TypeArguments\cf1 ="FileImageSource"\cf2\par
+                                \cf4  iOS\cf1 ="Forward.png"\cf2\par
+                                 \cf4  Android\cf1 ="Forward.png"\cf2\par
+                                 \cf4  WinPhone\cf1 ="Assets/Icon/Forward.png"\cf2  \cf1  />\cf2\par
+                \cf1 </\cf3 Button.Image\cf1 >\cf2\par
+            \cf1 </\cf3 Button\cf1 >\cf2\par
+\par
+            \par
+            \cf5 <!--Label-->\cf2\par
+            \par
+            \cf1 <\cf3 Label\cf4  Grid.Column\cf1 ="4"\cf2   \par
+                  \cf4  WidthRequest\cf1 ="200"\cf4  VerticalOptions\cf1 ="CenterAndExpand"\cf4  HorizontalOptions\cf1 ="CenterAndExpand"\cf2\par
+               \cf4  Text\cf1 ="00:28/00:00"\cf4  TextColor\cf1 ="White"\cf4  Margin\cf1 ="6"\cf4  Padding\cf1 ="0.5"/>\cf2\par
+\par
+\par
+           \par
+            \par
+            \par
+            \par
+            \cf5 <!--ProgressBar-->\cf2\par
+            \par
+            \cf1 <\cf3 ProgressBar\cf4  Grid.Column\cf1 ="5"\cf2  \par
+                        \cf4  x\cf1 :\cf4 Name\cf1 ="Mainprogressbar"\cf2\par
+                        \cf4  Progress\cf1 ="0.28"\cf2  \par
+                            \par
+                        \cf4  ProgressColor\cf1 ="SkyBlue"\cf2  \par
+                        \cf4  WidthRequest\cf1 ="300"\cf2      \par
+                        \cf4  HeightRequest\cf1 ="15"\cf2\par
+       \par
+                        \cf4  HorizontalOptions\cf1 ="Center"\cf2\par
+                        \cf4  VerticalOptions\cf1 ="Center"/>\cf2\par
+\par
+\par
+\par
+\par
+            \cf5 <!--Fifth Button Unmute-->\cf2\par
+\par
+\par
+            \cf1 <\cf3 Button\cf4  Grid.Column\cf1 ="6"\cf2\par
+                   \cf4  Text\cf1 ="Unmute"\cf4  BackgroundColor\cf1 ="#333738"\cf4  TextColor\cf1 ="White"\cf4  BorderColor\cf1 ="White"\cf4  Margin\cf1 ="6"\cf4  Padding\cf1 ="0.5"\cf2  \par
+                   \cf4  HorizontalOptions\cf1 ="Start"\cf4  VerticalOptions\cf1 ="Start">\cf2\par
+\par
+                \cf1 <\cf3 Button.Image\cf2  \par
+                        \cf4  Aspect\cf1 ="AspectFit">\cf2\par
+                    \cf1 <\cf3 OnPlatform\cf4  x\cf1 :\cf4 TypeArguments\cf1 ="FileImageSource"\cf2\par
+                                \cf4  iOS\cf1 ="Unmute.png"\cf2\par
+                                 \cf4  Android\cf1 ="Unmute.png"\cf2\par
+                                 \cf4  WinPhone\cf1 ="Assets/Icon/Unmute.png"\cf2  \cf1  />\cf2\par
+                \cf1 </\cf3 Button.Image\cf1 >\cf2\par
+\par
+\par
+            \cf1 </\cf3 Button\cf1 >\cf2\par
+\par
+            \cf5 <!--Slider-->\cf2\par
+\par
+\par
+            \cf1 <\cf3 Slider\cf4  x\cf1 :\cf4 Name\cf1 ="myslider"\cf4  Grid.Column\cf1 ="7"\cf2    \par
+                  \cf4  Minimum\cf1 ="0"\cf4  Maximum\cf1 ="100"\cf2  \cf1  />\cf2\par
+\par
+            \cf1 <\cf3 Label\cf4  Grid.Column\cf1 ="7"\cf4  x\cf1 :\cf4 Name\cf1 ="Mylabel"\cf4  TextColor\cf1 ="White"\cf2\par
+                  \cf4  HorizontalOptions\cf1 ="Center"\cf4  VerticalOptions\cf1 ="Start"/>\cf2\par
+\par
+            \par
+            \cf5 <!--Label-->\cf2\par
+\par
+            \cf1 <\cf3 Label\cf4  Grid.Column\cf1 ="8"\cf4  Text\cf1 ="Speed"\cf4  TextColor\cf1 ="White"\cf4  HorizontalOptions\cf1 ="Center"\cf4  VerticalOptions\cf1 ="Center"\cf4  Padding\cf1 ="0.5"/>\cf2\par
+\par
+\par
+            \cf1 <\cf3 Label\cf4  Grid.Column\cf1 ="9"/>\cf2\par
+            \cf5 <!--Picker-->\cf2\par
+            \par
+            \cf1 <\cf3 StackLayout\cf4  Grid.Column\cf1 ="10">\cf2\par
+            \cf1 <\cf3 FlexLayout\cf4  Direction\cf1 ="Row"\cf4  Wrap\cf1 ="Wrap"\cf4  JustifyContent\cf1 ="Start"\cf4  AlignItems\cf1 ="Start"\cf4  AlignContent\cf1 ="Start">\cf2\par
+                \cf1 <\cf3 Picker\cf4  VerticalOptions\cf1 ="StartAndExpand"\cf2  \par
+                               \cf4  TextColor\cf1 ="White"\cf2  \par
+                               \cf4  SelectedIndex\cf1 ="2"\cf4  SelectedItem\cf1 ="\{\cf3 Binding\cf4  SelectedDevice\cf1\}">\cf2\par
+                    \cf1 <\cf3 Picker.Items\cf1 >\cf2\par
+                            \cf1 <\cf3 x\cf1 :\cf3 String\cf1 >\cf2 1.0x\cf1 </\cf3 x\cf1 :\cf3 String\cf1 >\cf2\par
+                            \cf1 <\cf3 x\cf1 :\cf3 String\cf1 >\cf2 1.1x\cf1 </\cf3 x\cf1 :\cf3 String\cf1 >\cf2\par
+                            \cf1 <\cf3 x\cf1 :\cf3 String\cf1 >\cf2 1.2x\cf1 </\cf3 x\cf1 :\cf3 String\cf1 >\cf2\par
+\par
+                            \cf1 <\cf3 x\cf1 :\cf3 String\cf1 >\cf2 1.3x\cf1 </\cf3 x\cf1 :\cf3 String\cf1 >\cf2\par
+                            \cf1 <\cf3 x\cf1 :\cf3 String\cf1 >\cf2 1.4x\cf1 </\cf3 x\cf1 :\cf3 String\cf1 >\cf2\par
+                            \cf1 <\cf3 x\cf1 :\cf3 String\cf1 >\cf2 1.5x\cf1 </\cf3 x\cf1 :\cf3 String\cf1 >\cf2\par
+                            \cf1 <\cf3 x\cf1 :\cf3 String\cf1 >\cf2 1.6x\cf1 </\cf3 x\cf1 :\cf3 String\cf1 >\cf2\par
+                            \cf1 <\cf3 x\cf1 :\cf3 String\cf1 >\cf2 1.7x\cf1 </\cf3 x\cf1 :\cf3 String\cf1 >\cf2\par
+                            \cf1 <\cf3 x\cf1 :\cf3 String\cf1 >\cf2 1.8x\cf1 </\cf3 x\cf1 :\cf3 String\cf1 >\cf2\par
+                            \cf1 <\cf3 x\cf1 :\cf3 String\cf1 >\cf2 1.9x\cf1 </\cf3 x\cf1 :\cf3 String\cf1 >\cf2\par
+                            \cf1 <\cf3 x\cf1 :\cf3 String\cf1 >\cf2 2.0x\cf1 </\cf3 x\cf1 :\cf3 String\cf1 >\cf2\par
+                            \par
+                    \cf1 </\cf3 Picker.Items\cf1 >\cf2\par
+                \cf1 </\cf3 Picker\cf1 >\cf2\par
+               \par
+            \cf1 </\cf3 FlexLayout\cf1 >\cf2\par
+            \cf1 </\cf3 StackLayout\cf1 >\cf2\par
+\par
+          \par
+\par
+            \cf5 <!--ImageButton-->\cf2\par
+\par
+            \cf1 <\cf3 StackLayout\cf4  Grid.Column\cf1 ="11">\cf2\par
+                \cf1 <\cf3 ImageButton\cf2  \cf4  Source\cf1 ="Assets/Icon/Fullscreen.png"\cf4  Margin\cf1 ="6"\cf2  \par
+                              \par
+                            \cf4  VerticalOptions\cf1 ="End"\cf4  HorizontalOptions\cf1 ="End"/>\cf2\par
+            \cf1 </\cf3 StackLayout\cf1 >\cf2\par
+\par
+        \cf1 </\cf3 Grid\cf1 >\cf2\par
+\par
+        \par
+\par
+\par
+        \cf1 </\cf3 Grid\cf1 >\cf2\par
+        \par
+\cf1 </\cf3 ContentPage\cf1 >\cf2\par
+  \cf0\f1\fs22\par
+}
+ 
