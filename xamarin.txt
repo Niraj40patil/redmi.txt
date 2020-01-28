@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App6.MainPage">
+    
+    
+
+    <Grid RowSpacing="0" ColumnSpacing="5" >
+
+        <Grid.RowDefinitions>
+            
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+
+        </Grid.RowDefinitions>
+
+        
+
+        <Grid Grid.Row="0" BackgroundColor="NavajoWhite"/>
+
+
+
+
+
+
+        <Grid Grid.Row="1" 
+                  VerticalOptions="EndAndExpand"
+                  BackgroundColor="#333738"  RowSpacing="0.1" ColumnSpacing="0.1" >
+
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="110"/>
+                
+            </Grid.ColumnDefinitions>
+                
+            
+            
+                        <!--First Button Stop-->            
+
+                <Button Grid.Column="0"  x:Name="StopButtonIcon"  BackgroundColor="#333738" Text="Stop" TextColor="White"
+                            BorderColor="White" HorizontalOptions="Start" VerticalOptions="Start"
+                    Margin="6" Padding="0.5">
+
+
+
+                    <Button.Image 
+                         Aspect="AspectFit">
+                        <OnPlatform x:TypeArguments="FileImageSource"
+                                 iOS="Stop.png"
+                                  Android="Stop.png"
+                                  WinPhone="Assets/Icon/Stop.png" />
+                    </Button.Image>
+                </Button>
+
+
+                    
+            
+            <!--Second Button Play-->
+         
+            <Button x:Name="PlayButton"  Grid.Column="1"
+                    Text="Play" BackgroundColor="#333738" TextColor="White" BorderColor="White" Margin="6" Padding="0.5"
+                        HorizontalOptions="Start" VerticalOptions="Start">
+
+                <Button.Image 
+                         Aspect="AspectFit">
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                                 iOS="Play.png"
+                                  Android="Play.png"
+                                  WinPhone="Assets/Icon/Play.png" />
+                </Button.Image>
+
+            </Button>
+
+
+
+
+
+
+
+                      <!--Third Button 10 Second Back-->
+
+
+
+            <Button Grid.Column="2" x:Name="BackwardButton"
+                Text="10 Sec Back" BackgroundColor="#333738" TextColor="White" BorderColor="White" Margin="6" Padding="0.5" 
+                    HorizontalOptions="Start" VerticalOptions="Start">
+
+                <Button.Image 
+                         Aspect="AspectFit">
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                                 iOS="Backward.png"
+                                  Android="Backward.png"
+                                  WinPhone="Assets/Icon/Backward.png"  />
+                </Button.Image>
+
+
+
+            </Button>
+            
+            
+            
+            <!--Fourth Button 10 Second Forward-->
+
+
+            <Button Grid.Column="3" x:Name="ForwardButton"
+                      Text="10 sec Next" BackgroundColor="#333738" TextColor="White" BorderColor="White" 
+                    VerticalOptions="Start" HorizontalOptions="Start" 
+                    Margin="6" Padding="0.5" >
+
+                <Button.Image 
+                         Aspect="AspectFit">
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                                 iOS="Forward.png"
+                                  Android="Forward.png"
+                                  WinPhone="Assets/Icon/Forward.png"  />
+                </Button.Image>
+            </Button>
+
+            
+            <!--Label-->
+            
+            <Label Grid.Column="4"  
+                   WidthRequest="200" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
+                Text="00:28/00:00" TextColor="White" Margin="6" Padding="0.5"/>
+
+
+           
+            
+            
+            
+            <!--ProgressBar-->
+            
+            <ProgressBar Grid.Column="5" 
+                         x:Name="Mainprogressbar"
+                         Progress="0.28" 
+                            
+                         ProgressColor="SkyBlue" 
+                         WidthRequest="300"     
+                         HeightRequest="15"
+       
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"/>
+
+
+
+
+            <!--Fifth Button Unmute-->
+
+
+            <Button Grid.Column="6"
+                    Text="Unmute" BackgroundColor="#333738" TextColor="White" BorderColor="White" Margin="6" Padding="0.5" 
+                    HorizontalOptions="Start" VerticalOptions="Start">
+
+                <Button.Image 
+                         Aspect="AspectFit">
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                                 iOS="Unmute.png"
+                                  Android="Unmute.png"
+                                  WinPhone="Assets/Icon/Unmute.png"  />
+                </Button.Image>
+
+
+            </Button>
+
+            <!--Slider-->
+
+
+            <Slider x:Name="myslider" Grid.Column="7"   
+                   Minimum="0" Maximum="100"  />
+
+            <Label Grid.Column="7" x:Name="Mylabel" TextColor="White"
+                   HorizontalOptions="Center" VerticalOptions="Start"/>
+
+            
+            <!--Label-->
+
+            <Label Grid.Column="8" Text="Speed" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" Padding="0.5"/>
+
+
+            <Label Grid.Column="9"/>
+            <!--Picker-->
+            
+            <StackLayout Grid.Column="10">
+            <FlexLayout Direction="Row" Wrap="Wrap" JustifyContent="Start" AlignItems="Start" AlignContent="Start">
+                <Picker VerticalOptions="StartAndExpand" 
+                                TextColor="White" 
+                                SelectedIndex="2" SelectedItem="{Binding SelectedDevice}">
+                    <Picker.Items>
+                            <x:String>1.0x</x:String>
+                            <x:String>1.1x</x:String>
+                            <x:String>1.2x</x:String>
+
+                            <x:String>1.3x</x:String>
+                            <x:String>1.4x</x:String>
+                            <x:String>1.5x</x:String>
+                            <x:String>1.6x</x:String>
+                            <x:String>1.7x</x:String>
+                            <x:String>1.8x</x:String>
+                            <x:String>1.9x</x:String>
+                            <x:String>2.0x</x:String>
+                            
+                    </Picker.Items>
+                </Picker>
+               
+            </FlexLayout>
+            </StackLayout>
+
+          
+
+            <!--ImageButton-->
+
+            <StackLayout Grid.Column="11">
+                <ImageButton  Source="Assets/Icon/Fullscreen.png" Margin="6" 
+                              
+                             VerticalOptions="End" HorizontalOptions="End"/>
+            </StackLayout>
+
+        </Grid>
+
+        
+
+
+        </Grid>
+        
+</ContentPage>
+  
